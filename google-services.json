@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "884158412583",
+    "project_id": "whatsapp-views-agency",
+    "storage_bucket": "whatsapp-views-agency.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884158412583:android:7e510536397d783e3b1b02",
+        "android_client_info": {
+          "package_name": "com.example.whatsappviewsagency"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884158412583-vehe5v85iftofblm9v65151spnna5idt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxY9Nfv_Mr2heQQEuVObyMHYWwS_P_MH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884158412583-vehe5v85iftofblm9v65151spnna5idt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

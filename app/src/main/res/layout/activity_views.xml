@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views">
+
+    <TextView
+        android:id="@+id/send_views"
+        android:layout_width="401dp"
+        android:layout_height="87dp"
+        android:gravity="center"
+        android:text="1. Fill your name 2. Fill your Mpesa Number 3. Upload a screenshot of your Whatsapp Views to receive your payment!"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="349dp"
+        android:layout_height="55dp"
+        android:text="submit views"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <EditText
+        android:id="@+id/names"
+        android:layout_width="358dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:hint="Full names"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.753"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/mpesa_no"
+        android:layout_width="362dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="MPESA No"
+        android:inputType="phone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.832"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/views"
+        android:layout_width="311dp"
+        android:layout_height="313dp"
+        android:background="#1D4CAF50"
+        app:layout_constraintBottom_toTopOf="@+id/names"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_views" />
+<!--
+    <Button
+        android:id="@+id/upload_image"
+        android:layout_width="406dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="28dp"
+        android:text="upload screenshot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent" -->/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/upload_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mpesa_no"
+        app:layout_constraintVertical_bias="0.482"
+        app:srcCompat="@android:drawable/ic_menu_upload" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
